@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
     <head>
         <title>Sebo commerce</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
         <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
         <!-- JS -->
+        
         <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/article.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="loadArticle();">
         <!-- ***************HEADER********************* -->
         <header>
             <div id="compte">
@@ -56,25 +52,19 @@ and open the template in the editor.
         <main>
             <h1>Sebo, plus qu'un site, un art de dépenser ses thunasses</h1>
             <section>
-                <img src="promo.png" alt="Bandeau promo" />
+                <img src="img/promo.jpg" alt="Bandeau promo" />
             </section>
             <section>
                 <h2>Nos meilleures ventes</h2>
                 <div id="accueilVentes">
-                    <div class="meilleuresVentes">
-                        <h3></h3>
-                        <img src="" alt="" />
-                        <button class="btn">Voir</button>
+                    <div id="art1">
+                        
                     </div>
-                    <div class="meilleuresVentes">
-                        <h3></h3>
-                        <img src="" alt="" />
-                        <button class="btn">Voir</button>
+                    <div id="art2">
+                       
                     </div>
-                    <div class="meilleuresVentes">
-                        <h3></h3>
-                        <img src="" alt="" />
-                        <button class="btn">Voir</button>
+                    <div id="art3">
+                        
                     </div>
                     
                     
@@ -94,10 +84,7 @@ and open the template in the editor.
                     <i class="fa fa-truck"></i>
                     <small>Ma livraison offerte</small>
                 </article>
-                <article>
-                    <i class="fa fa-money"></i>
-                    <small>Carte de fidélité</small>
-                </article>
+
                 <article>
                     <i class="fa fa-phone"></i>
                     <small>Service client</small>
