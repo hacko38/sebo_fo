@@ -40,8 +40,7 @@ function loadArticlesByCategory()
 
         $.each(articles, function (i, value) {
             $("#catalogue").append('<div class="articleVignette" id="'+ i + '"></div>');
-            
-            
+                       
             $("#" + i).append('<h3>' + value.name + '</h3>');
             $("#" + i).append('<hr>');
             $("#" + i).append('<img src="' + value.urlPicture + '"height="70" width="70" />');
