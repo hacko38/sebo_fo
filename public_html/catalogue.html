@@ -13,7 +13,7 @@
         <script src="js/jquery.js" type="text/javascript"></script>
         <script src="js/article.js" type="text/javascript"></script>
     </head>
-    <body onload="">
+    <body onload="loadArticlesByCategory();">
         <!-- ***************HEADER********************* -->
         <header>
             <div id="compte">
@@ -39,8 +39,8 @@
 
                 <nav>
                     <a href="index.html">Accueil</a>
-                    <a href="catalogue.html/?category=CD">CD / DVD</a>
-                    <a href="catalogue.html/?category=livre">Livres</a>
+                    <a href="catalogue.html?category=CD">CD / DVD</a>
+                    <a href="catalogue.html?category=livre">Livres</a>
                     <a href="#">Contact</a>
                     <a href="about.html">Notre histoire</a>
                 </nav>
@@ -50,6 +50,7 @@
         <!-- ***************MAIN********************* -->
 
         <main>
+            <div id="bigCatalogue">
             <aside id="asideNav">
                 <h3>Navigation</h3>
                 <a href="catalogue.html/.category=cd">CD</a>
@@ -58,6 +59,7 @@
             <section id="catalogue">
                 
             </section>
+            </div>
         </main>
 
         <!-- ***************FOOTER********************* -->

@@ -19,16 +19,41 @@ body {
 
 #menu {
     width : 70%;
+    
     margin : 0 auto;
 }
 
+#bigCatalogue {
+    display : flex;
+    justify-content : space-between;;
+    
+}
 #asideNav {
     width: 10%;
+    height : 200px;
     display : flex;
     flex-direction : column;
     border : 1px solid black;
     padding : 20px 10px;
+    display: inline-block;
+    text-align: center;
 }
+
+.articleVignette {
+    border : 1px solid black;
+    padding : 20px;
+    margin : 10px;
+}
+#catalogue {
+    width : 85%;
+    display: flex;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    
+}
+
+
+
 
 .meilleuresVentes {
     border : 1px solid grey;
