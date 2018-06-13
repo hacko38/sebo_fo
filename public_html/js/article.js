@@ -1,16 +1,14 @@
 function loadArticle()
-{
-    
-    var getProduct = "http://172.16.153.21:8080/sebo_backendnew/api/productscatalogue/getoneproduct/1";
-	
-    $.ajax({
-        url: getProduct
-    }).done(function(data) {
+{	
+    $.getJSON("http://172.16.153.21:8080/sebo_backendnew/api/productscatalogue/getlist",function (data){
+        $.each(data,function(index,value){
+            var i = index-1;
+           $("#art"+i).append('<h3>' + value.name + '<h3>');
+        });
         
-        $('#art1').append(" c'est fait2 !");
-    });
+        
+    });  
 }
-
 
 
 
