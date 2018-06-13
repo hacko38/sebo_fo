@@ -35,14 +35,28 @@ body {
     flex-direction : column;
     border : 1px solid black;
     padding : 20px 10px;
-    display: inline-block;
     text-align: center;
+}
+
+#bigEspaceClient {
+    background-color : rgba(159, 161, 163, 0.5);
+    
+}
+
+#espaceClient {
+    width : 70%;
+    margin : 0 auto;
 }
 
 .articleVignette {
     border : 1px solid black;
     padding : 20px;
-    margin : 10px;
+    margin-bottom: 10px;
+    width : 20%;
+}
+.articleVignette img {
+    width: 60%;
+    height : auto;
 }
 #catalogue {
     width : 85%;
