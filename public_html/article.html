@@ -59,9 +59,10 @@
                 </div>
             </section>
             <section id="product-quantity">
+                <div id="artPicture"></div>
                 <img src="img/product/product3_big.jpg" alt="" />
                 <div class="price">
-                    <select name="quantity">
+                    <select id="selectQty" name="quantity" onchange="refreshPrice();">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
