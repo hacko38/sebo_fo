@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <title>Sebo commerce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <!-- JS -->
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/article.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- ***************HEADER********************* -->
+    <header>
+        <div id="bigEspaceClient"><section id="espaceClient"></section></div>
+
+        <div id="menu">
+            <section id="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo de Cup of Tea" />
+                </a>
+                <section id="cart">
+                    <span>Mon panier</span>
+                    <i class="fas fa-shopping-cart"></i>
+                    <strong id="prix">42,00€</strong>
+                </section>
+            </section>
+
+            <section id="espace">
+
+            </section>
+
+
+
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="catalogue.html?category=cd">CD / DVD</a>
+                <a href="catalogue.html?category=livre">Livres</a>
+                <a href="#">Contact</a>
+                <a href="about.html">Notre histoire</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ***************MAIN********************* -->
+
+    <main>
+        <form method="POST" action="identification.html" id="formClient">
+            <fieldset>
+                <legend>Connexion</legend>
+               
+                    <input name="pseudo" type="text" id="pseudo" placeholder="Identifiant"/>
+                    <input type="password" name="password" id="password" placeholder="Mot de passe"/>
+                    <input type="submit" value="Valider">
+                
+            </fieldset>
+        </form>
+    </main>
+
+
+            <!-- ***************FOOTER********************* -->
+            <footer>
+                <section id="info">
+                    <article>
+                        <i class="fa fa-lock"></i>
+                        <small>Paiement sécurisé</small>
+                    </article>
+                    <article>
+                        <i class="fa fa-truck"></i>
+                        <small>Ma livraison offerte</small>
+                    </article>
+
+                    <article>
+                        <i class="fa fa-phone"></i>
+                        <small>Service client</small>
+                    </article>
+                    <article>
+                        <i class="fa fa-check-circle"></i>
+                        <small>Garantie qualité</small>
+                    </article>
+                </section>
+                <section id="bottombar">
+                    <article>
+                        <h2>Sebo</h2>
+                        <ul>
+                            <li>Notre histoire</li>
+                            <li>Nos boutiques</li>
+                            <li>Espace clients professionnels</li>
+                            <li>Recrutement</li>
+                            <li>Contactez-nous !</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>Commandez en ligne</h2>
+                        <ul>
+                            <li>Première visite</li>
+                            <li>Aide - FAQ</li>
+                            <li>Service client</li>
+                            <li>Suivre ma commande</li>
+                            <li>Conditions générales de vente</li>
+                            <li>Informations légales</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>Suivez-nous !</h2>
+                        <ul>
+                            <li>Notre histoire</li>
+                            <li>Nos boutiques</li>
+                            <li>Espace clients professionnels</li>
+                        </ul>
+                    </article>
+                </section>
+            </footer>
+
+            <script src="js/client.js" type="text/javascript"></script>
+            </body>
+            </html>

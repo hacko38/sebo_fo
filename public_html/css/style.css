@@ -42,10 +42,34 @@ body {
     background-color : rgba(159, 161, 163, 0.5);
     
 }
+fieldset {
+    display : flex;
+    flex-direction : column;
+    width : 50%;
+    margin : auto;
+   
+}
+legend {
+    font-size: 25px;
+}
+fieldset input {
+    margin : 20px auto;
+    width: 50%;
+    text-align : center;
+    
+}
 
 #espaceClient {
     width : 70%;
     margin : 0 auto;
+    
+}
+
+#welcome {
+    margin : 0 10px 10px 0;
+}
+#espaceClient a {
+    color : white;
 }
 
 .articleVignette {
