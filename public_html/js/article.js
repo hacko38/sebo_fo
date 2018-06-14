@@ -28,8 +28,7 @@ function loadArticle()
         $("#artPrice").append(article.price + " €");
         $("#artPicture").append('<img src="' + article.urlPicture + '"height="100%" width="100%" />');
         
-    }
-    );
+    });
 
 }
 
