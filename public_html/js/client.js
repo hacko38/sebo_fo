@@ -33,17 +33,14 @@ $.getJSON('http://localhost:8080/sebo_backendnew/api/accountmanager/connect?logi
     }).fail(function ()
     {
         window.location = 'http://localhost:8383/sebo_fo/identification.html';
+        
+
         alert('fail');
     });
 
 
 });
 
-
-function addCookie()
-{
-    setCookie('client', 'Hakim Lama');
-}
 
 function removeCookie()
 {
