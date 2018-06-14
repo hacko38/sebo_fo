@@ -20,10 +20,6 @@ function loadArticle()
     var url = window.location.search;
     var id = url.substring(url.lastIndexOf("=") + 1);
 
-
-    
-
-
      $.getJSON("http://172.16.153.31:8080/sebo_backendnew/api/productscatalogue/getoneproduct/" + id, function (article) {
 
         $("#artTitre").append(article.name);
@@ -35,9 +31,7 @@ function loadArticle()
         
     }
     );
-
 }
-
 
 function refreshPrice()
 {
