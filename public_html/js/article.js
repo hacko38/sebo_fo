@@ -21,6 +21,7 @@ function loadArticle()
     var id = url.substring(url.lastIndexOf("=") + 1);
 
      $.getJSON("http://172.16.153.31:8080/sebo_backendnew/api/productscatalogue/getoneproduct/" + id, function (article) {
+
         $("#artTitre").append(article.name);
         $("#artEditeur").append(article.supplier);
         $("#artRef").append(article.reference);
@@ -28,10 +29,14 @@ function loadArticle()
         $("#artPrice").append(article.price + " €");
         $("#artPicture").append('<img src="' + article.urlPicture + '"height="100%" width="100%" />');
         
+<<<<<<< HEAD
     });
 
+=======
+    }
+    );
+>>>>>>> master
 }
-
 
 function refreshPrice()
 {
@@ -48,7 +53,7 @@ function loadArticlesByCategory()
 {
     var url = window.location.search;
     var category = url.substring(url.lastIndexOf("=") + 1);
-    $.getJSON("http://172.16.153.31:8080/sebo_backendnew/api/productscatalogue/getlistbycategory/" + category, function (articles) {
+    $.getJSON("http://172.16.153.21:8080/sebo_backendnew/api/productscatalogue/getlistbycategory/" + category, function (articles) {
 
         $.each(articles, function (i, value) {
             $("#catalogue").append('<div class="articleVignette" id="'+ i + '"></div>');
