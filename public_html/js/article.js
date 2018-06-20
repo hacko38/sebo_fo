@@ -1,6 +1,6 @@
 function loadFrontArticles()
 {
-    $.getJSON("http://172.16.153.31:8080/sebo_backendnew/api/productscatalogue/getlist", function (data) {
+    $.getJSON("http://172.16.153.21:8080/sebo_backendnew/api/productscatalogue/getlist", function (data) {
 
         $.each(data, function (i, value) {
             var j = i + 1;
@@ -20,7 +20,7 @@ function loadArticle()
     var url = window.location.search;
     var id = url.substring(url.lastIndexOf("=") + 1);
 
-     $.getJSON("http://172.16.153.31:8080/sebo_backendnew/api/productscatalogue/getoneproduct/" + id, function (article) {
+     $.getJSON("http://172.16.153.21:8080/sebo_backendnew/api/productscatalogue/getoneproduct/" + id, function (article) {
 
         $("#artTitre").append(article.name);
         $("#artEditeur").append(article.supplier);
@@ -29,20 +29,17 @@ function loadArticle()
         $("#artPrice").append(article.price + " €");
         $("#artPicture").append('<img src="' + article.urlPicture + '"height="100%" width="100%" />');
         
-<<<<<<< HEAD
+
     });
 
-=======
-    }
-    );
->>>>>>> master
+
 }
 
 function refreshPrice()
 {
     var url = window.location.search;
     var id = url.substring(url.lastIndexOf("=") + 1);
-     $.getJSON("http://172.16.153.31:8080/sebo_backendnew/api/productscatalogue/getoneproduct/" + id, function (article) {
+     $.getJSON("http://172.16.153.21:8080/sebo_backendnew/api/productscatalogue/getoneproduct/" + id, function (article) {
        $("#artPrice").text(article.price * $("#selectQty").val() + " €");  
      });
     
