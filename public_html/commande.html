@@ -7,19 +7,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="css/form.css" rel="stylesheet" type="text/css"/>
 
     <!-- JS -->
 
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/article.js" type="text/javascript"></script>
 </head>
-<body>
+<body onload="getOrdersByCustomer();">
     <!-- ***************HEADER********************* -->
     <header>
-        <div id="compte">
+        <div id="bigEspaceClient"><section id="espaceClient"></section></div>
 
-        </div>
         <div id="menu">
             <section id="logo">
                 <a href="index.html">
@@ -40,7 +38,7 @@
 
             <nav>
                 <a href="index.html">Accueil</a>
-                <a href="catalogue.html?category=CD">CD / DVD</a>
+                <a href="catalogue.html?category=cd">CD / DVD</a>
                 <a href="catalogue.html?category=livre">Livres</a>
                 <a href="#">Contact</a>
                 <a href="about.html">Notre histoire</a>
@@ -51,25 +49,21 @@
     <!-- ***************MAIN********************* -->
 
     <main>
-        <fieldset id="contact">
-            <legend>Formulaire d'inscription</legend>
-            <form action="panier.html" method="get" id="formSignUp">
-                <input type="text" name="lastName" placeholder="Nom">
-                <input type="text" name="firstName" placeholder="Prénom">
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Mot de passe">
-                <div id="adresse">
-                    <input type="text" name="number" placeholder="N° de rue">
-                    <input type="text" name="road" placeholder="Rue">
-                    <input type="text" name="zipcode" placeholder="Code Postal">
-                    <input type="text" name="town" placeholder="Ville">
-                </div>
-                <input type="submit" value="S'inscrire"> 
-            </form>
-        </fieldset>
-        
-          
+        <h1 id="title"></h1>
+        <div id="recapCommande">
+            <div id="resumeCommande">
+
+            </div>
+            <div id="dateCommande"></div>
+            
+            <div id="adresseCommande">
+                
+            </div>
+            <div id="statutCommande"></div>
+        </div>
+
     </main>
+
 
     <!-- ***************FOOTER********************* -->
     <footer>
@@ -124,7 +118,9 @@
             </article>
         </section>
     </footer>
-
-
+    <script src="js/cookiesManager.js" type="text/javascript"></script>
+    <script src="js/commandes.js" type="text/javascript"></script>
+    <script src="js/client.js" type="text/javascript"></script>
+    
 </body>
 </html>
